@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://annakcher.github.io/sitemap.xml
