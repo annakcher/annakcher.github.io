@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nerd Alert · Anna Chernesky</title>
+<meta name="description" content="Photos, films, and assorted enthusiasms.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+  try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<style>
+  /* Background paintings for this page. Paths are relative to this file. */
+  body.has-bg::before { background-image: url('assets/img/grimshaw/snow-and-mist-grimshaw.jpg'); }
+  [data-theme="dark"] body.has-bg::before { background-image: url('assets/img/grimshaw/view-of-heath-street-by-night-grimshaw.jpg'); }
+</style>
+</head>
+<body class="has-bg">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">Anna Chernesky</a>
+
+    <button class="icon-btn nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <path d="M3 6h18M3 12h18M3 18h18"/>
+      </svg>
+    </button>
+
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="cv.html">CV</a>
+      <a href="writing.html">Writing</a>
+      <a href="nerd-alert.html" aria-current="page">Nerd Alert</a>
+
+      <button class="icon-btn theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap wrap--wide">
+
+    <div class="page-head">
+      <h1>Nerd Alert</h1>
+    </div>
+
+    <!-- Drop photos in assets/img/nerd/ and point each src at them. Click opens a lightbox. -->
+	<!--
+    <ul class="photo-grid">
+      <li>
+        <figure class="photo-card">
+          <img src="assets/img/nerd/placeholder.svg" alt="Describe what's in the photo" loading="lazy">
+          <figcaption>A caption with a bit of story in it. Where, when, why it stuck with you.</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="photo-card">
+          <img src="assets/img/nerd/placeholder.svg" alt="Describe what's in the photo" loading="lazy">
+          <figcaption>Another caption.</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="photo-card">
+          <img src="assets/img/nerd/placeholder.svg" alt="Describe what's in the photo" loading="lazy">
+          <figcaption>Another caption.</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="photo-card">
+          <img src="assets/img/nerd/placeholder.svg" alt="Describe what's in the photo" loading="lazy">
+          <figcaption>Another caption.</figcaption>
+        </figure>
+      </li>
+    </ul>
+	-->
+
+    <hr>
+
+    <h2>Best movies</h2>
+
+    <div class="fav-columns">
+      <div>
+        <h3>All-time</h3>
+        <ul class="fav-list">
+          <li>
+            <a href="https://letterboxd.com/film/titanic-1997/">Titanic</a> <span class="why">James Cameron, 1997. Does not deserve the hate it's accrued over the years. This is an excellent multi-genre film and deserves all its accolades.</span>
+          </li>
+          <li>
+            <a href="https://letterboxd.com/film/chicago/">Chicago</a> <span class="why">Rob Marshall, 2002. Just pure entertainment and an excellent commentary on the media circus.</span>
+          </li>
+          <li>
+            <a href="https://letterboxd.com/film/the-umbrellas-of-cherbourg/">The Umbrellas of Cherbourg</a> <span class="why">Jacques Demy, 1964. The world hasn't seen color like this since.</span>
+          </li>
+		  <li>
+            <a href="https://letterboxd.com/film/zodiac/">Zodiac</a> <span class="why">David Fincher, 2007. Fantastically directed. I have never been so spooked.</span>
+          </li>
+		  <li>
+            <a href="https://letterboxd.com/film/no-other-choice-2025/">No Other Choice</a> <span class="why">Park Chan-wook, 2025. A labor economist must-watch (I'm not endorsing the methods used in this film to obtain a job).</span>
+          </li>
+		  <li>
+            <a href="https://letterboxd.com/film/portrait-of-a-lady-on-fire/">Portrait of a Lady on Fire</a> <span class="why">Céline Sciamma, 2019. Slow, haunting, heartbreaking, and beautiful.</span>
+          </li>
+		  <li>
+            <a href="https://letterboxd.com/film/whiplash-2014/">Whiplash</a> <span class="why">Damien Chazelle, 2014. Obsession can only go so far before it becomes a problem (I really don't think Fletcher's methods are justified in the end).</span>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Recent watches</h3>
+        <ul class="fav-list">
+          <li>
+            <a href="https://letterboxd.com/film/the-prestige/">The Prestige (Nolan, 2006)</a> <span class="why">Watched for the first time this month and was entranced. I love a movie about magic. Layer Nolan's filmmaking on top of that and there's bound to be something good.</span>
+          </li>
+          <li>
+            <a href="https://letterboxd.com/film/red-rooms/">Red Rooms (Plante, 2023)</a> <span class="why">Québécois thriller, extremely effective at creating a dark atmosphere. Highly recommend for fans of Zodiac.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <h2>Best books</h2>
+	
+	<div class="fav-columns">
+      <div>
+        <h3>All-time</h3>
+        <ul class="fav-list">
+          <li>
+            <a href="https://www.goodreads.com/book/show/5043.The_Pillars_of_the_Earth">Pillars of the Earth (Follett)</a> <span class="why">Sometimes the best tale is a simple one. Excellent historical epic.</span>
+          </li>
+		  <li>
+            <a href="https://www.goodreads.com/book/show/15823480-anna-karenina">Anna Karenina (Tolstoy)</a> <span class="why">One of the best classics for a reason.</span>
+          </li>
+		  <li>
+            <a href="https://www.goodreads.com/book/show/34051011-pachinko">Pachinko (Lee)</a> <span class="why">Multigenerational epic and historical. Had me crying at times.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Recent reads</h3>
+        <ul class="fav-list">
+          <li>
+            <a href="https://www.goodreads.com/book/show/4406.East_of_Eden">East of Eden (Steinbeck)</a> <span class="why">Love a multigenerational epic. I haven't gotten around to reading any Steinbeck before and this was a good introduction.</span>
+          </li>
+		  <li>
+            <a href="https://www.goodreads.com/book/show/220817728-atmosphere">Atmosphere (Reid)</a> <span class="why">This had me crying more than a little bit.</span>
+          </li>
+		  <li>
+            <a href="https://www.goodreads.com/book/show/59336625-all-the-lovers-in-the-night">All the Lovers in the Night (Kawakami)</a> <span class="why">Descriptions of isolation and loneliness that felt so personal!</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+<!--
+    <div class="fav-columns">
+      <div>
+        <h3>Reading</h3>
+        <ul class="fav-list">
+          <li><a href="#">A book, blog, or newsletter</a> <span class="why">Why it's worth your time.</span></li>
+          <li><a href="#">Another one</a> <span class="why">Why it's worth your time.</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Listening</h3>
+        <ul class="fav-list">
+          <li><a href="#">A podcast or album</a> <span class="why">Why it's worth your time.</span></li>
+          <li><a href="#">Another one</a> <span class="why">Why it's worth your time.</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Miscellaneous enthusiasms</h3>
+        <ul class="fav-list">
+          <li><a href="#">A hobby, a game, a tool</a> <span class="why">The pitch, in one line.</span></li>
+          <li><a href="#">Another one</a> <span class="why">The pitch, in one line.</span></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  -->
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; <span id="year">2026</span> Anna Chernesky</span>
+    <span>anna.chernesky [at] princeton [dot] edu</span>
+    <span class="credit">
+      Backgrounds: <em>Snow and Mist</em> (light) and <em>View of Heath Street by Night</em> (dark)
+      by John Atkinson Grimshaw (1836–1893). Both works are in the public domain.
+    </span>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
